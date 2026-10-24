@@ -1,7 +1,7 @@
 {
-  "name": "@jsonscraper/sdk",
+  "name": "@jsonscraper/instagram",
   "version": "0.1.0",
-  "description": "Official Instagram and TikTok API SDK for Node.js and TypeScript",
+  "description": "Instagram Scraper API SDK for Node.js and TypeScript \u2014 profiles, media, comments and search",
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -25,14 +25,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsonscraper/jsonscraper-node.git"
+    "url": "https://github.com/jsonscraper/instagram-api-node.git"
   },
   "keywords": [
+    "jsonscraper",
     "instagram",
-    "tiktok",
-    "api",
+    "instagram-scraper",
+    "instagram-api",
+    "scraper-api",
     "sdk",
-    "jsonscraper"
+    "typescript"
   ],
   "dependencies": {
     "json-bigint": "^1.0.0"
