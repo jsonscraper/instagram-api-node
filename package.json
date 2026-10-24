@@ -1,0 +1,40 @@
+{
+  "name": "@jsonscraper/sdk",
+  "version": "0.1.0",
+  "description": "Official Instagram and TikTok API SDK for Node.js and TypeScript",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "python3 tests/contract.py"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsonscraper/jsonscraper-node.git"
+  },
+  "keywords": [
+    "instagram",
+    "tiktok",
+    "api",
+    "sdk",
+    "jsonscraper"
+  ],
+  "dependencies": {
+    "json-bigint": "^1.0.0"
+  }
+}
