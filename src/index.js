@@ -22,7 +22,7 @@ export class Client {
     for(let attempt=0;attempt<=this.retries;attempt++) {
       let delay;
       try {
-        const response=await fetch(url,{headers:{Accept:'application/json','User-Agent':'jsonscraper-node/0.1.0'},redirect:'manual',signal:AbortSignal.timeout(this.timeout)});
+        const response=await fetch(url,{headers:{Accept:'application/json','User-Agent':'jsonscraper-node/0.1.1'},redirect:'manual',signal:AbortSignal.timeout(this.timeout)});
         if(response.ok) return (response.headers.get('content-type')||'').includes('json') ? JSONbig.parse(await response.text()) : new Uint8Array(await response.arrayBuffer());
         const retryAfter=response.headers.get('retry-after');
         await response.body?.cancel();
