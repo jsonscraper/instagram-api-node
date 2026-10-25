@@ -23,7 +23,7 @@ export JSONSCRAPER_INSTAGRAM_LICENSE_KEY='your-license-key'
 **2. Install the package:**
 
 ```sh
-npm install github:jsonscraper/instagram-api-node#v0.1.0
+npm install github:jsonscraper/instagram-api-node#0.1.0
 ```
 
 **3. Make a request:**
